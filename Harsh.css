@@ -1,0 +1,149 @@
+@font-face {
+    font-family: nimbus; 
+    src: url(nimbus-sans.woff2);
+}
+
+@font-face {
+    font-family: nimbus-bold; 
+    src: url(nimbus-bold.woff2);
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
+  grid-template-rows: 0.1fr 0.1fr 1.8fr 1.5fr 0.5fr;
+  grid-template-areas: "SuperNav SuperNav SuperNav SuperNav SuperNav"
+                        "Navbar Navbar Navbar Navbar Navbar"
+                        "carousel carousel carousel carousel carousel"
+                        "Section0 Section1 Section2 Section3 Section4"
+                        "Footer Footer Footer Footer Footer";
+}
+.SuperNav { grid-area: SuperNav; background-color: white;}
+
+.Logo { grid-area: Logo; background-color: white;}
+
+.Navbar { grid-area: Navbar; background-color: white; }
+
+.carousel { grid-area: carousel; background-color: black;}
+
+.Section0 { grid-area: Section0; background-color: white; }
+
+.Section1 { grid-area: Section1; background-color: white; }
+
+.Section2 { grid-area: Section2; background-color: white; }
+
+.Section3 { grid-area: Section3; background-color: white; }
+
+.Section4 { grid-area: Section4; background-color: white; }
+
+.Footer { grid-area: Footer; background-color: rgb(53,60,76);}
+
+#donate-btn {
+    float: right;
+    color: white;
+    background: red;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    user-select: none;
+    margin: 0px 182px;
+}
+
+#donate-btn:hover {
+    background: crimson;
+}
+
+#donate-btn:active {
+    opacity: 0.4;
+}
+
+.Navbar > ul, .Navbar > li {
+    list-style-type: none;
+}
+
+
+.Navbar > ul > li {
+    float: right;
+    padding: 0 20px;
+}
+
+.Navbar > ul > li > a:hover{
+     color: crimson;
+}
+
+.Navbar > ul {
+ margin: 10px 165px;
+ display: flex; 
+ justify-content: flex-end;
+}
+
+.Navbar > ul > li > a {
+    display: block;
+    text-decoration: none;
+    font-family: "nimbus-bold";
+    font-size: 25px;
+    color: rgb(57,62,76);
+}
+
+.Section {
+    padding: 10px;
+}
+
+.Section h3 {
+    font-family: "nimbus-bold";
+    color: rgb(57,62,76);
+    text-align: left;
+    font-size: 30px;
+    margin: 0px;
+}
+
+.Section h3:hover {
+    color: skyblue;
+    cursor: pointer;
+    
+}
+
+.Section .link{
+font-family: "nimbus-bold";
+text-align: left;
+}
+
+.Section a{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.Section a:hover{
+    color: skyblue;
+}
+
+.Section p{
+    color: gray;
+    font-weight: lighter;
+    font-family: nimbus;
+    margin-top: 6px;
+    text-align: justify;
+}
+
+.img {
+     width: 100%;
+}
+
+.logo {
+    margin: auto;
+    padding: 0px;
+    position: absolute;
+    left: 8%;
+    top: 1%;
+    width: 100px;
+}
